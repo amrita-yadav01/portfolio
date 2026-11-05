@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy-900: #3d1215;
+  --color-burgundy-800: #5F1D21;
+  --color-burgundy-700: #7A3035;
+  --color-burgundy-600: #8B343A;
+  --color-burgundy-500: #9E434A;
+  --color-rose-300: #B5827C;
+  --color-rose-200: #D8BCB6;
+  --color-blush-100: #E8D4CE;
+  --color-cream-100: #F6EEE9;
+  --color-ivory: #FFF9F5;
+  --color-dark-text: #332528;
+  --color-muted-text: #6B575B;
+  --color-border-warm: #EBDDDA;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #FFF9F5;
+  color: #332528;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #FFF9F5;
+  color: #332528;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EEE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #B5827C;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B343A;
+}
+
+/* Glass and gradient utilities */
+.glass-panel {
+  background: rgba(255, 249, 245, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(181, 130, 124, 0.2);
+}
+
+.subtle-shadow {
+  box-shadow: 0 10px 30px -10px rgba(95, 29, 33, 0.08);
+}
+
+.elevated-shadow {
+  box-shadow: 0 20px 40px -15px rgba(95, 29, 33, 0.14);
+}
+
